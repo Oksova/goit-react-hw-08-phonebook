@@ -1,0 +1,45 @@
+.contactList {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.nameText {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.deleteBtn {
+  display: inline-block;
+  min-width: 60px;
+  height: 30px;
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: pink;
+  font-size: 15px;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.deleteBtn:hover {
+  transform: scale(1);
+  background-color: palevioletred;
+  border-color: black;
+  color: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}

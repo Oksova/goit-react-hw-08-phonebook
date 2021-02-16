@@ -1,0 +1,19 @@
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+
+  text-align: center;
+  align-items: center;
+  display: block;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid gray;
+}
+
+ul,
+li {
+  list-style: none;
+}
