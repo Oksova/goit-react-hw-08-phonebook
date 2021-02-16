@@ -13,6 +13,7 @@ import {
 
 export const fetchContacts = () => async dispatch => {
   dispatch(fetchContactsRequest());
+  console.log('fetchContacts :', fetchContacts);
   try {
     const { data } = await axios.get('/contacts');
     dispatch(fetchContactsSuccess(data));
@@ -27,6 +28,7 @@ export const addContact = (name, number) => dispatch => {
     number,
   };
   dispatch(addContactRequest());
+
   axios
     .post('/contacts', contact)
     .then(({ data }) => dispatch(addContactSuccess(data)))

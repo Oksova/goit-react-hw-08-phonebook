@@ -12,7 +12,7 @@ export default function PublicRoute({
 
   return (
     <Route {...routeProps}>
-      (shouldRedirect ? <Redirect to="/contacts" /> : children)
+      {shouldRedirect ? <Redirect to="/contacts" /> : children}
     </Route>
   );
 }

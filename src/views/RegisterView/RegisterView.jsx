@@ -10,7 +10,7 @@ export default function RegisterView() {
   const [password, setPassword] = useState('');
 
   const error = useSelector(authSelectors.getErrorRegister);
-  console.log('RegidterView :', error);
+  console.log('RegisterView :', error);
 
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
@@ -42,6 +42,7 @@ export default function RegisterView() {
           <p>Name</p>
           <input type="text" name="name" value={name} onChange={handleChange} />
         </label>
+
         <label>
           <p>Email</p>
           <input

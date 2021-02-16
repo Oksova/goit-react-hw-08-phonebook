@@ -23,20 +23,24 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    isFetchingCurrentUser && (
+    !isFetchingCurrentUser && (
       <Container>
         <AppBar />
+
         <Switch>
           <PublicRoute exact path="/">
             <HomeView />
           </PublicRoute>
+
           <PublicRoute exact path="/register" restricted>
             <RegisterView />
           </PublicRoute>
+
           <PublicRoute exact path="/login" restricted>
             <LoginView />
           </PublicRoute>
-          <PrivateRoute exact path="contacts">
+
+          <PrivateRoute exact path="/contacts">
             <ContactsView />
           </PrivateRoute>
         </Switch>
